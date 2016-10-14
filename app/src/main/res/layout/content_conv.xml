@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.hint.txtsum"
+        android:textSize="17dp"
+        android:id="@+id/txts"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/main.hint.inputpies"
+        android:ems="5"
+        android:id="@+id/inputp"
+        android:layout_below="@+id/txts"
+        android:layout_alignLeft="@+id/txts"
+        android:layout_alignStart="@+id/txts"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/main.hint.inputmetros"
+        android:ems="5"
+        android:id="@+id/inputm"
+        android:layout_below="@+id/txts"
+        android:layout_toRightOf="@+id/inputp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.button.btncalc"
+        android:id="@+id/btnc"
+        android:layout_below="@+id/inputp"
+        android:layout_alignLeft="@+id/inputp"
+        android:layout_alignStart="@+id/inputp"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_below="@+id/btnc"
+        android:layout_alignStart="@+id/btnc"
+        android:layout_alignLeft="@+id/txts"
+        android:layout_alignRight="@id/txts"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputpul"
+        android:layout_below="@+id/separator"
+        android:layout_alignParentLeft="@+id/btnc"
+        android:layout_alignParentStart="@+id/btnc"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputyar"
+        android:layout_below="@+id/inputpul"
+        android:layout_alignParentLeft="@+id/inputpul"
+        android:layout_alignParentStart="@+id/inputpul" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputmet"
+        android:layout_below="@+id/inputyar"
+        android:layout_alignParentLeft="@+id/inputyar"
+        android:layout_alignParentStart="@+id/inputyar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputmill"
+        android:layout_below="@+id/inputmet"
+        android:layout_alignParentLeft="@+id/inputmet"
+        android:layout_alignParentStart="@+id/inputmet" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Suma y conversion</string>
+    <string name="main.hint.txtsum">Proporcione una cantidad en pies y otra en metros para realizar
+        una suma de ambas cantidades</string>
+    <string name="main.hint.inputpies">Pies</string>
+    <string name="main.hint.inputmetros">Metros</string>
+    <string name="main.button.btncalc">Calcular</string>
+</resources>
